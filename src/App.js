@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import LandingPage from './pages/LandingPage';
+import UploadPage from './pages/UploadPage';
+import ProcessingPage from './pages/ProcessingPage';
+import ResultDashboard from './pages/ResultDashboard';
+import ExportPage from './pages/ExportPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <main style={{ minHeight: '80vh' }}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/upload" element={<UploadPage />} />
+          <Route path="/processing" element={<ProcessingPage />} />
+          <Route path="/results" element={<ResultDashboard />} />
+          <Route path="/export" element={<ExportPage />} />
+          {/* Add Login/Signup pages as needed */}
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
