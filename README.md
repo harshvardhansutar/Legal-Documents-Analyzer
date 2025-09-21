@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 📑 Legal Documents Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A machine learning and NLP-based project for analyzing legal documents, extracting insights, and making legal text easier to understand.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
+- 📝 Upload and process legal documents (PDF, DOCX, TXT).
+- 🔍 Text extraction and cleaning.
+- 🤖 Natural Language Processing for summarization and keyword extraction.
+- 📊 Document classification and sentiment analysis.
+- ⚖️ AI-powered legal query answering (planned).
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+- **Python** (NLP & Machine Learning)
+- **NLTK / SpaCy / Transformers**
+- **Scikit-learn / TensorFlow / PyTorch**
+- **Streamlit / Flask** (for frontend integration)
+- **Git & GitHub** (version control)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Project Structure
+Legal-Documents-Analyzer/
+│── data/ # Sample datasets
+│── notebooks/ # Jupyter notebooks for experiments
+│── src/ # Source code (processing, models, utils)
+│── requirements.txt # Dependencies
+│── README.md # Project documentation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+yaml
+Copy code
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚡ Installation & Usage
+```bash
+# Clone the repository
+git clone https://github.com/harshvardhansutar/Legal-Documents-Analyzer.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate into the folder
+cd Legal-Documents-Analyzer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+pip install -r requirements.txt
 
-### `npm run eject`
+# Run the app (example with Streamlit)
+streamlit run app.py
+📌 To-Do
+ Improve preprocessing pipeline
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ Add advanced summarization models
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Integrate with a web app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ Deploy with Docker/Cloud
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-## Learn More
+📜 License
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+yaml
+Copy code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+👉 Do you want me to make this a **basic README** (short and simple) or a **detailed one** (like above, with features, tech stack, structure, etc.)?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
